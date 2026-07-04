@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bean & Brew | Specialty Coffee</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo" aria-label="Bean & Brew Home">
+                <svg class="logo-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 8h1a2 2 0 0 1 2 2v6a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2v-6a2 2 0 0 1 2-2h1"/><path d="M7 8v-2a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v2"/><line x1="12" y1="4" x2="12" y2="6"/><line x1="8" y1="12" x2="8" y2="16"/><line x1="16" y1="12" x2="16" y2="16"/></svg>
+                Bean & Brew
+            </a>
+            
+            <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+
+            <ul class="nav-menu" id="nav-menu" role="navigation">
+                <li><a href="#about" class="nav-link">Our Story</a></li>
+                <li><a href="#menu" class="nav-link">Menu</a></li>
+                <li><a href="#visit" class="nav-link">Visit Us</a></li>
+                <li><a href="#contact" class="btn btn-nav">Order Online</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero" id="home">
+        <div class="hero-bg" aria-hidden="true"></div>
+        <div class="container hero-content">
+            <p class="hero-tagline reveal">Handcrafted since 2012</p>
+            <h1 class="reveal">Coffee that wakes up your <span class="highlight">soul</span>, not just your brain.</h1>
+            <p class="hero-desc reveal">Ethically sourced beans, roasted in-house, brewed with precision. Taste the difference passion makes.</p>
+            <div class="hero-actions reveal">
+                <a href="#menu" class="btn btn-primary">Explore Menu</a>
+                <a href="#visit" class="btn btn-secondary">Find Us</a>
+            </div>
+        </div>
+        <div class="scroll-indicator" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 5v14M19 12l-7 7-7-7"/></svg>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section class="section about" id="about" aria-labelledby="about-title">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-image reveal">
+                    <div class="image-wrapper">
+                        <!-- Using a placeholder SVG for offline capability -->
+                        <svg viewBox="0 0 600 700" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                            <rect fill="#E8D5C4" width="600" height="700"/>
+                            <circle cx="300" cy="250" r="80" fill="#C9B896" opacity="0.5"/>
+                            <path d="M220 450 Q300 380 380 450" stroke="#8B6F47" stroke-width="8" fill="none" stroke-linecap="round"/>
+                            <path d="M250 450 L250 580 M350 450 L350 580" stroke="#8B6F47" stroke-width="8" stroke-linecap="round"/>
+                            <text x="300" y="650" text-anchor="middle" font-family="Georgia, serif" font-size="24" fill="#5D4E37" opacity="0.6">Freshly Roasted Beans</text>
+                        </svg>
+                    </div>
+                    <div class="experience-badge reveal">
+                        <span class="badge-number">12+</span>
+                        <span class="badge-text">Years of Craft</span>
+                    </div>
+                </div>
+                <div class="about-text reveal">
+                    <p class="section-tag">Our Philosophy</p>
+                    <h2 id="about-title">More than just a cup of coffee</h2>
+                    <p>Founded in 2012 by two childhood friends, Bean & Brew started as a humble cart at the local farmers market. We believed that great coffee shouldn't be a luxury—it should be a daily ritual accessible to everyone.</p>
+                    <p>Today, we roast our own beans in small batches every Tuesday and Thursday. We partner directly with farms in Colombia, Ethiopia, and Guatemala, ensuring fair wages and sustainable practices. Every cup tells a story of the soil, the farmer, and the roaster.</p>
+                    <ul class="values-list">
+                        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Direct Trade & Fair Prices</li>
+                        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Small Batch Roasting</li>
+                        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Compostable Packaging</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section class="section menu" id="menu" aria-labelledby="menu-title">
+        <div class="container">
+            <div class="section-header reveal">
+                <p class="section-tag">What's Brewing</p>
+                <h2 id="menu-title">Our Seasonal Menu</h2>
+            </div>
+            
+            <div class="menu-tabs" role="tablist" aria-label="Menu categories">
+                <button class="tab-btn active" role="tab" aria-selected="true" aria-controls="panel-espresso" id="tab-espresso" data-tab="espresso">Espresso Bar</button>
+                <button class="tab-btn" role="tab" aria-selected="false" aria-controls="panel-brew" id="tab-brew" data-tab="brew">Slow Brew</button>
+                <button class="tab-btn" role="tab" aria-selected="false" aria-controls="panel-cold" id="tab-cold" data-tab="cold">Cold & Specialty</button>
+                <button class="tab-btn" role="tab" aria-selected="false" aria-controls="panel-food" id="tab-food" data-tab="food">Pastries</button>
+            </div>
+
+            <!-- Espresso Panel -->
+            <div class="tab-panel active" id="panel-espresso" role="tabpanel" aria-labelledby="tab-espresso">
+                <div class="menu-grid">
+                    <article class="menu-item reveal">
+                        <div class="item-header">
+                            <h3>Signature Espresso</h3>
+                            <span class="price">$3.50</span>
+                        </div>
+                        <p class="item-desc">Our house blend. Notes of dark chocolate, caramel, and a hint of orange zest. Pulls a thick, syrupy shot.</p>
+                    </article>
+                    <article class="menu-item reveal">
+                        <div class="item-header">
+                            <h3>Cortado</h3>
+                            <span class="price">$4.00</span>
+                        </div>
+                        <p class="item-desc">Equal parts espresso and steamed milk. Served in a 4.5oz Gibraltar glass. Perfect balance.</p>
+                    </article>
+                    <article class="menu-item reveal">
+                        <div class="item-header">
+                            <h3>Oat Latte</h3>
+                            <span class="price">$5.50</span>
+                        </div>
+                        <p class="item-desc">Creamy barista-blend oat milk. Nutty, sweet, and incredibly smooth. Add vanilla? +$0.50</p>
+                    </article>
+                    <article class="menu-item reveal">
+                        <div class="item-header">
+                            <h3>Flat White</h3>
+                            <span class="price">$4.50</span>
+                        </div>
+                        <p class="item-desc">Double ristretto shot with microfoam milk. Australian style. Strong coffee flavor, velvety texture.</p>
+                    </article>
+                </div>
+            </div>
+
+            <!-- Brew Panel -->
+            <div class="tab-panel" id="panel-brew" role="tabpanel" aria-labelledby="tab-brew" hidden>
+                <div class="menu-grid">
+                    <article class="menu-item reveal">
+                        <div class="item-header"><h3>V60 Pour Over</h3><span class="price">$5.00</span></div>
+                        <p class="item-desc">Clean, bright, tea-like body. Highlights floral notes. Ask our barista for today's single origin.</p>
+                    </article>
+                    <article class="menu-item reveal">
+                        <div class="item-header"><h3>Chemex</h3><span class="price">$6.50</span></div>
+                        <p class="item-desc">For two. Thick filter removes oils for ultimate clarity. Served in the iconic hourglass carafe.</p>
+                    </article>
+                    <article class="menu-item reveal">
+                        <div class="item-header"><h3>French Press</h3><span class="price">$4.50</span></div>
+                        <p class="item-desc">Full-bodied, rich, and heavy. Steeped 4 minutes. Best for chocolatey, nutty roasts.</p>
+                    </article>
+                    <article class="menu-item reveal">
+                        <div class="item-header"><h3>AeroPress</h3><span class="price">$4.00</span></div>
+                        <p class="item-desc">Versatile and fast. Low acidity, high sweetness. Our barista's personal favorite method.</p>
+                    </article>
+                </div>
+            </div>
+
+            <!-- Cold Panel -->
+            <div class="tab-panel" id="panel-cold" role="tabpanel" aria-labelledby="tab-cold" hidden>
+                <div class="menu-grid">
+                    <article class="menu-item reveal">
+                        <div class="item-header"><h3>Nitro Cold Brew</h3><span class="price">$5.50</span></div>
+                        <p class="item-desc">Steeped 18hrs, infused with nitrogen. Cascading pour, creamy head, zero sugar, naturally sweet.</p>
+                    </article>
+                    <article class="menu-item reveal">
+                        <div class="item-header"><h3>Iced Shaken Espresso</h3><span class="price">$5.00</span></div>
+                        <p class="item-desc">Double shot, shaken with ice & demerara syrup. Aerated, frothy, refreshing. Add oat milk +$0.50</p>
+                    </article>
+                    <article class="menu-item reveal">
+                        <div class="item-header"><h3>Cold Brew Tonic</h3><span class="price">$5.50</span></div>
+                        <p class="item-desc">Cold brew concentrate topped with premium tonic water, orange peel, rosemary sprig. Complex & refreshing.</p>
+                    </article>
+                    <article class="menu-item reveal">
+                        <div class="item-header"><h3>Affogato</h3><span class="price">$6.00</span></div>
+                        <p class="item-desc">Two scoops vanilla bean gelato drowned in hot espresso. Dessert? Coffee? Why not both.</p>
+                    </article>
+                </div>
+            </div>
+
+            <!-- Food Panel -->
+            <div class="tab-panel" id="panel-food" role="tabpanel" aria-labelledby="tab-food" hidden>
+                <div class="menu-grid">
+                    <article class="menu-item reveal">
+                        <div class="item-header"><h3>Almond Croissant</h3><span class="price">$4.50</span></div>
+                        <p class="item-desc">Flaky, buttery, filled with house-made frangipane, topped with toasted almonds & powdered sugar.</p>
+                    </article>
+                    <article class="menu-item reveal">
+                        <div class="item-header"><h3>Cinnamon Morning Bun</h3><span class="price">$4.00</span></div>
+                        <p class="item-desc">Laminated dough, brown butter cinnamon sugar, cream cheese glaze. Warm from oven at 8am & 11am.</p>
+                    </article>
+                    <article class="menu-item reveal">
+                        <div class="item-header"><h3>Blueberry Scone</h3><span class="price">$3.75</span></div>
+                        <p class="item-desc">Tender, not dry. Wild Maine blueberries, lemon zest, coarse sugar crust. Gluten-free option available.</p>
+                    </article>
+                    <article class="menu-item reveal">
+                        <div class="item-header"><h3>Savory Ham & Gruyère</h3><span class="price">$5.50</span></div>
+                        <p class="item-desc">Croissant dough, Black Forest ham, aged Gruyère, dijon mustard. Toasted to order.</p>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Visit Section -->
+    <section class="section visit" id="visit" aria-labelledby="visit-title">
+        <div class="container">
+            <div class="visit-grid">
+                <div class="visit-info reveal">
+                    <p class="section-tag">Find Us</p>
+                    <h2 id="visit-title">Visit Our Roastery & Cafe</h2>
+                    <p>Watch us roast through the viewing window while you sip. We're open daily for coffee, pastries, and bean sales.</p>
+                    
+                    <div class="info-cards">
+                        <div class="info-card reveal">
+                            <div class="icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
+                            <div>
+                                <h3>Location</h3>
+                                <p>142 Coffee Lane, Beanville, CA 90210</p>
+                                <p class="muted">Corner of 1st & Arabica</p>
+                            </div>
+                        </div>
+                        <div class="info-card reveal">
+                            <div class="icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div>
+                            <div>
+                                <h3>Hours</h3>
+                                <p>Mon – Fri: 6:30 AM – 7:00 PM</p>
+                                <p>Sat – Sun: 7:00 AM – 8:00 PM</p>
+                            </div>
+                        </div>
+                        <div class="info-card reveal">
+                            <div class="icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg></div>
+                            <div>
+                                <h3>Contact</h3>
+                                <p>hello@beanandbrew.com</p>
+                                <p>(555) 019-2834</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="visit-map reveal" aria-label="Map placeholder showing Bean & Brew location">
+                    <!-- Placeholder for Google Maps Embed or Static Image -->
+                    <div class="map-placeholder">
+                        <svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                            <rect fill="#E8E0D8" width="400" height="300"/>
+                            <rect x="180" y="100" width="40" height="40" rx="5" fill="#C9B896" transform="rotate(-45 200 120)"/>
+                            <circle cx="200" cy="120" r="8" fill="#D4A843"/>
+                            <text x="200" y="180" text-anchor="middle" font-family="Inter, sans-serif" font-size="14" fill="#8B7D6B">📍 142 Coffee Lane</text>
+                            <text x="200" y="200" text-anchor="middle" font-family="Inter, sans-serif" font-size="12" fill="#A89B8E">Interactive map would go here</text>
+                            <text x="200" y="220" text-anchor="middle" font-family="Inter, sans-serif" font-size="12" fill="#A89B8E">(Embed Google Maps iframe in production)</text>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact / Newsletter Section -->
+    <section class="section contact" id="contact" aria-labelledby="contact-title">
+        <div class="container">
+            <div class="contact-card reveal">
+                <div class="contact-text">
+                    <p class="section-tag">Stay Updated</p>
+                    <h2 id="contact-title">Get the Fresh Roast Report</h2>
+                    <p>Weekly emails on new beans, brewing tips, and subscriber-only discounts. No spam, just good coffee news.</p>
+                </div>
+                <form class="newsletter-form" id="newsletter-form" novalidate>
+                    <div class="form-group">
+                        <label for="email" class="visually-hidden">Email address</label>
+                        <input type="email" id="email" name="email" placeholder="Enter your email" required autocomplete="email" aria-describedby="email-error">
+                        <span class="error-message" id="email-error" aria-live="polite"></span>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Subscribe</button>
+                    <p class="form-note">We respect your privacy. Unsubscribe anytime.</p>
+                </form>
+                <div class="toast" id="toast" role="status" aria-live="polite" hidden>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                    <span>Thanks for subscribing! Check your inbox soon.</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#" class="logo footer-logo" aria-label="Bean & Brew Home">
+                        <svg class="logo-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 8h1a2 2 0 0 1 2 2v6a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2v-6a2 2 0 0 1 2-2h1"/><path d="M7 8v-2a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v2"/><line x1="12" y1="4" x2="12" y2="6"/><line x1="8" y1="12" x2="8" y2="16"/><line x1="16" y1="12" x2="16" y2="16"/></svg>
+                        Bean & Brew
+                    </a>
+                    <p>Roasting happiness in small batches since 2012.</p>
+                    <div class="social-links" role="list" aria-label="Social media links">
+                        <a href="#" aria-label="Instagram" role="listitem"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+                        <a href="#" aria-label="Twitter" role="listitem"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/></svg></a>
+                        <a href="#" aria-label="Facebook" role="listitem"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+                    </div>
+                </div>
+                <nav class="footer-nav" aria-label="Footer navigation">
+                    <div class="footer-col">
+                        <h4>Company</h4>
+                        <ul><li><a href="#about">Our Story</a></li><li><a href="#">Careers</a></li><li><a href="#">Sustainability</a></li><li><a href="#">Wholesale</a></li></ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Support</h4>
+                        <ul><li><a href="#">FAQ</a></li><li><a href="#">Shipping Info</a></li><li><a href="#">Returns</a></li><li><a href="#">Contact Us</a></li></ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Legal</h4>
+                        <ul><li><a href="#">Privacy Policy</a></li><li><a href="#">Terms of Service</a></li><li><a href="#">Accessibility</a></li></ul>
+                    </div>
+                </nav>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Bean & Brew. All rights reserved. Brewed with <span aria-hidden="true">♥</span> in Beanville.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
